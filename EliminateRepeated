@@ -1,0 +1,13 @@
+public static void EliminateRepeated(String word){
+  String S ="";
+		for(int j=0;j<word.length();j++){
+			char t = word.charAt(j);
+			for(int i = j; i< word.length()-1;i++){
+				if(word.charAt(i+1)==t ){
+					return;
+				}
+			}
+			S+=word.charAt(j);
+		}
+		return true;
+	}
